@@ -5,7 +5,7 @@
 //  Created by João Paulo Delgado Preti.
 //  Copyright (c) 2014 João Paulo Delgado Preti. All rights reserved.
 //
-
+/*
 #ifndef EstruturaDeDados_DynamicStack_h
 #define EstruturaDeDados_DynamicStack_h
 
