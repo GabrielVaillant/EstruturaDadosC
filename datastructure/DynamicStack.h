@@ -25,3 +25,4 @@ int pop(DynamicStack *stack);
 int top(DynamicStack *stack);
 
 #endif
+*/

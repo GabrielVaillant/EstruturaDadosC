@@ -25,3 +25,4 @@ void* pop(GenericDynamicStack *stack);
 void* top(GenericDynamicStack *stack);
 
 #endif
+
