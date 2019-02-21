@@ -30,6 +30,7 @@ void* pop(LinkedList *list);
 void* top(LinkedList *list);
 bool isEmpty(LinkedList *list);
 int indexOf(LinkedList *list,void *data);
+void* getPos(LinkedList *list,int pos);
 int add(LinkedList *list, int pos, void *data);
 int addAll(LinkedList *listDest, int pos, LinkedList *listSource);
 void* removePos(LinkedList *listDest, int pos);

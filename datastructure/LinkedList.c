@@ -34,6 +34,9 @@ bool isEmpty(LinkedList *list) {
 int indexOf(LinkedList *list,void *data) {
     return -1;
 }
+void* getPos(LinkedList *list,int pos) {
+    return NULL;
+}
 int add(LinkedList *list, int pos, void *data) {
     return 1;
 }

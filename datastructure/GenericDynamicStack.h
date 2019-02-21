@@ -5,7 +5,7 @@
 //  Created by João Paulo Delgado Preti.
 //  Copyright (c) 2014 João Paulo Delgado Preti. All rights reserved.
 //
-
+/*
 #ifndef EstruturaDeDados_GenericDynamicStack_h
 #define EstruturaDeDados_GenericDynamicStack_h
 
@@ -25,4 +25,4 @@ void* pop(GenericDynamicStack *stack);
 void* top(GenericDynamicStack *stack);
 
 #endif
-
+*/
