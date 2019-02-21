@@ -9,6 +9,12 @@
 #ifndef EstruturaDeDados_LinkedList_h
 #define EstruturaDeDados_LinkedList_h
 
+enum boolean {
+    true = 1, false = 0
+};
+
+typedef enum boolean bool;
+
 typedef struct Node {
     void *data;
     struct Node *next;
