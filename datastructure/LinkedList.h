@@ -40,9 +40,11 @@ bool isEmpty(LinkedList *list);
 int indexOf(LinkedList *list,void *data, compare equal);
 //int indexOf(LinkedList *list,void *data);
 void* getPos(LinkedList *list,int pos);
+Node* getNodeByPos(LinkedList *list,int pos);
 int add(LinkedList *list, int pos, void *data);
 int addAll(LinkedList *listDest, int pos, LinkedList *listSource);
 void* removePos(LinkedList *listDest, int pos);
-void* removeData(LinkedList *listDest, void *data);
+void* removeData(LinkedList *listDest, void *data, compare equal);
+//void* removeData(LinkedList *listDest, void *data);
 #endif
 

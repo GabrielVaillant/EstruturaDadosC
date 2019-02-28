@@ -74,7 +74,7 @@ int indexOf(LinkedList *list,void *data,compare equal) {
     int count=0;
     Node *aux = list->first;
     
-    //while(aux!=NULL && aux->data!=data) {
+    //while(aux!=NULL && aux->data!=data) { //versão sem ponteiro para função
     while(aux!=NULL && !equal(aux->data,data)) {
         aux=aux->next;
         count++;
@@ -90,19 +90,50 @@ void* getPos(LinkedList *list,int pos) {
     return aux->data;
 }
 
+Node* getNodeByPos(LinkedList *list,int pos) {
+    if (isEmpty(list) || pos>=list->size) return NULL;
+    Node *aux = list->first;
+    for (int count=0;(aux!=NULL && count<pos);count++,aux=aux->next);
+    return aux;
+}
+
 int add(LinkedList *list, int pos, void *data) {
+    Node *aux = getNodeByPos(list, pos);
+    if (aux==NULL) return -2;
+    
+    Node *newNode = (Node*) malloc(sizeof(Node));
+    if (newNode==NULL) return -1;
+    
+    newNode->data = data;
+    newNode->next = NULL;
+    
+    newNode->next = aux->next;
+    aux->next = newNode;
+    
+    list->size++;
+    
     return 1;
 }
 
 int addAll(LinkedList *listDest, int pos, LinkedList *listSource) {
-    return 0;
+    Node *aux = getNodeByPos(listDest, pos);
+    if (aux==NULL) return -2;
+    
+    if (isEmpty(listSource)) return -1;
+    
+    listSource->last->next = aux->next;
+    aux->next = listSource->first;
+    
+    listDest->size+=listSource->size;
+    
+    return listSource->size;
 }
 
 void* removePos(LinkedList *listDest, int pos) {
     return NULL;
 }
 
-void* removeData(LinkedList *listDest, void *data) {
+void* removeData(LinkedList *listDest, void *data, compare equal) {
     return NULL;
 }
 
