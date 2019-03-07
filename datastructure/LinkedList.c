@@ -129,12 +129,60 @@ int addAll(LinkedList *listDest, int pos, LinkedList *listSource) {
     return listSource->size;
 }
 
-void* removePos(LinkedList *listDest, int pos) {
-    return NULL;
+void* removePos(LinkedList *list, int pos) {
+    if (isEmpty(list) || pos>=list->size) return NULL;
+    
+    //Se for o primeiro elemento
+    if (pos==0) return dequeue(list);
+    
+    Node *nodeRemove = NULL;
+    Node *aux = NULL;
+
+    aux = getNodeByPos(list, pos-1);
+    nodeRemove = aux->next;
+    aux->next = nodeRemove->next;
+    
+    //Se for o último elemento
+    if (pos+1==list->size) {
+        list->last = aux;
+    }
+    
+    void* dataRemove = nodeRemove->data;
+    free(nodeRemove);
+    list->size--;
+    
+    return dataRemove;
 }
 
-void* removeData(LinkedList *listDest, void *data, compare equal) {
-    return NULL;
+int removeData(LinkedList *list, void *data, compare equal) {
+    if (isEmpty(list)) return -1;
+    
+    if (equal(list->first->data,data)) {
+        free(dequeue(list));
+        list->size--;
+        return 1;
+    }
+    
+    if (equal(list->last->data,data)) {
+        free(removePos(list, list->size-1));
+        list->size--;
+        return 1;
+    }
+    
+    Node *aux = list->first;
+    while(aux->next!=NULL && !equal(aux->next->data,data))
+        aux=aux->next;
+    
+    if (aux->next!=NULL) {
+        Node *nodeRemove = aux->next;
+        aux->next = nodeRemove->next;
+        free(nodeRemove->data);
+        free(nodeRemove);
+        list->size--;
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 bool compara(void *data1, void *data2) {
