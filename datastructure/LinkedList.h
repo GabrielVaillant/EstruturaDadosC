@@ -21,7 +21,7 @@ typedef struct Node {
 }Node;
 
 typedef struct LinkedList {
-    Node *first;
+    //Node *first;
     Node *last;
     int size;
 }LinkedList;

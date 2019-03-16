@@ -73,7 +73,7 @@ int push(LinkedList *list, void *data) {
     if (newNode==NULL) return -1;
     newNode->data = data;
 
-//Quando era circular
+//Quando não era circular
 //    newNode->next = list->first;
 //    list->first = newNode;
 //    list->size++;
@@ -168,7 +168,8 @@ int addAll(LinkedList *listDest, int pos, LinkedList *listSource) {
     if (isEmpty(listSource)) return -1;
     
     listSource->last->next = aux->next;
-    aux->next = listSource->first;
+    //aux->next = listSource->first;
+    aux->next = listSource->last->next->next;
     
     listDest->size+=listSource->size;
     
@@ -221,7 +222,7 @@ int removeData(LinkedList *list, void *data, compare equal) {
 //    }
     
     //Node *aux = list->first;
-    Node *aux = list->last->next; //coceço pelo trash
+    Node *aux = list->last->next; //começo pelo trash
     //while(aux->next!=NULL && !equal(aux->next->data,data))
     while(aux->next!=list->last->next && !equal(aux->next->data,data))
         aux=aux->next;
