@@ -5,7 +5,7 @@
 //  Created by João Paulo Delgado Preti.
 //  Copyright (c) 2014 João Paulo Delgado Preti. All rights reserved.
 //
-
+/*
 #ifndef EstruturaDeDados_LinkedList_h
 #define EstruturaDeDados_LinkedList_h
 
@@ -48,3 +48,4 @@ int removeData(LinkedList *list, void *data, compare equal);
 //void* removeData(LinkedList *listDest, void *data);
 #endif
 
+*/
