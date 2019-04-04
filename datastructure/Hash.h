@@ -18,13 +18,15 @@ typedef struct HashStruct {
     int size;
 }HashStruct;
 
+//typedef bool (*compareKeys)(void*,void*);
+
 void initHash(HashStruct *hashStruct);
 bool IsHashEmpty(HashStruct *hashStruct);
 int hash(char *key);
 int put(HashStruct *hashStruct, char *key, void *data);
-bool containsKey(HashStruct *hashStruct, char *key);
-void* get(HashStruct *hashStruct, char *key);
-void* removeKey(HashStruct *hashStruct, char *key);
+bool containsKey(HashStruct *hashStruct, char *key, compare equal);
+void* get(HashStruct *hashStruct, char *key, compare equal);
+void* removeKey(HashStruct *hashStruct, char *key, compare equal);
 
 #endif
 
