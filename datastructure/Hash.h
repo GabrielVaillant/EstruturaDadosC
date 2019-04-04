@@ -18,8 +18,6 @@ typedef struct HashStruct {
     int size;
 }HashStruct;
 
-//typedef bool (*compareKeys)(void*,void*);
-
 void initHash(HashStruct *hashStruct);
 bool IsHashEmpty(HashStruct *hashStruct);
 int hash(char *key);
