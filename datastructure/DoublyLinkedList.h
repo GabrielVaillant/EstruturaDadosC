@@ -27,6 +27,7 @@ typedef struct DoublyLinkedList {
 }DoublyLinkedList;
 
 typedef bool (*compare)(void*,void*);
+typedef void (*printNode)(void*);
 
 void init(DoublyLinkedList *list);
 int enqueue(DoublyLinkedList *list, void *data);
@@ -44,7 +45,7 @@ int add(DoublyLinkedList *list, int pos, void *data);
 int addAll(DoublyLinkedList *listDest, int pos, DoublyLinkedList *listSource);
 void* removePos(DoublyLinkedList *list, int pos);
 int removeData(DoublyLinkedList *list, void *data, compare equal);
-void show(DoublyLinkedList *list);
+void show(DoublyLinkedList *list, printNode print);
 void showMem(DoublyLinkedList *list);
 
 #endif
