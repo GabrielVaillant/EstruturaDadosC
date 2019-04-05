@@ -183,11 +183,10 @@ int removeData(DoublyLinkedList *list, void *data, compare equal) {
     }
 }
 
-void show(DoublyLinkedList *list, printNode print) {
+void show(DoublyLinkedList *list) {
     Node *aux = list->first->next;
     while (aux!=list->first) {
-        //printf("%d - ", *((int*)aux->data));
-        print(aux->data);
+        printf("%d - ", *((int*)aux->data));
         aux=aux->next;
     }
 }

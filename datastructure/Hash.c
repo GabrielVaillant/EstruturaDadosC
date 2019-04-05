@@ -56,20 +56,6 @@ void* removeKey(HashStruct *hashStruct, char *key, compare equal) {
     return NULL;
 }
 
-void printCliente(void *data) {
-    Cliente *cliente = (Cliente*)data;
-    printf("%s - ", cliente->email);
-}
-
-void showHashStruct(HashStruct *hashStruct) {
-    printf("There are %d elements in the Hash\n\n",hashStruct->size);
-    for (int i=0; i < MAX; i++) {
-        printf("Hash %d has %d elements: ",i,hashStruct->hashes[i].size);
-        show(&hashStruct->hashes[i],printCliente);
-        printf("\n");
-    }
-}
-
 int main() {
     HashStruct hashes;
     initHash(&hashes);
@@ -90,6 +76,6 @@ int main() {
     Cliente *cliente = (Cliente*)get(&hashes, "Joao Paulo", comparaChaves);
     printf("%s\n",cliente->email);
     
-    showHashStruct(&hashes);
+
     return 0;
 }
