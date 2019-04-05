@@ -184,6 +184,14 @@ int removeData(DoublyLinkedList *list, void *data, compare equal) {
 }
 
 void show(DoublyLinkedList *list) {
+    Node *aux = list->first->next;
+    while (aux!=list->first) {
+        printf("%d - ", *((int*)aux->data));
+        aux=aux->next;
+    }
+}
+
+void showMem(DoublyLinkedList *list) {
     printf("Trash Node: %p\n\n",list->first);
     Node *aux = list->first->next;
     printf("Node Addr  : Previous    - Data        - Next\n\n");
@@ -199,7 +207,7 @@ bool compara(void *data1, void *data2) {
     
     return (*d1==*d2)?true:false;
 }
-
+/*
 int main() {
     DoublyLinkedList list;
     init(&list);
@@ -223,7 +231,7 @@ int main() {
     //printf("%d\n",*((int*)dequeue(&stack)));
     
     return 0;
-}
+}*/
 
 
 

@@ -44,6 +44,8 @@ int add(DoublyLinkedList *list, int pos, void *data);
 int addAll(DoublyLinkedList *listDest, int pos, DoublyLinkedList *listSource);
 void* removePos(DoublyLinkedList *list, int pos);
 int removeData(DoublyLinkedList *list, void *data, compare equal);
+void show(DoublyLinkedList *list);
+void showMem(DoublyLinkedList *list);
 
 #endif
 
