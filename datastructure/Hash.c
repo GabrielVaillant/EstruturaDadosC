@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "Hash.h"
 
 typedef struct Cliente {
@@ -56,6 +57,20 @@ void* removeKey(HashStruct *hashStruct, char *key, compare equal) {
     return NULL;
 }
 
+void printCliente(void *data) {
+    Cliente *cliente = (Cliente*)data;
+    printf("{%s,%s} - ", cliente->nome, cliente->email);
+}
+
+void showHashStruct(HashStruct *hashStruct) {
+    printf("There are %d elements in the Hash\n\n",hashStruct->size);
+    for (int i=0; i < MAX; i++) {
+        printf("Hash %d has %d elements: ",i,hashStruct->hashes[i].size);
+        show(&hashStruct->hashes[i],printCliente);
+        printf("\n");
+    }
+}
+
 int main() {
     HashStruct hashes;
     initHash(&hashes);
@@ -76,6 +91,21 @@ int main() {
     Cliente *cliente = (Cliente*)get(&hashes, "Joao Paulo", comparaChaves);
     printf("%s\n",cliente->email);
     
-
+    c = (Cliente *)malloc(sizeof(Cliente));
+    strcpy(c->nome,"Maria") ;
+    strcpy(c->email,"maria@email.br");
+    put(&hashes, c->nome, c);
+    
+    c = (Cliente *)malloc(sizeof(Cliente));
+    strcpy(c->nome,"Pedro") ;
+    strcpy(c->email,"pedro@email.com.br");
+    put(&hashes, c->nome, c);
+    
+    c = (Cliente *)malloc(sizeof(Cliente));
+    strcpy(c->nome,"Carla") ;
+    strcpy(c->email,"carla@gmail.com.br");
+    put(&hashes, c->nome, c);
+       
+    showHashStruct(&hashes);
     return 0;
 }
