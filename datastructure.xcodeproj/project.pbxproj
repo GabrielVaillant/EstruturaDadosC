@@ -8,6 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		7D0C47421E882D3F00307C49 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D0C47411E882D3F00307C49 /* main.c */; };
+		7D4120502268C77F0060CB70 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120272268C77D0060CB70 /* LinkedList.c */; };
+		7D4120512268C77F0060CB70 /* GenericDynamicStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D41202A2268C77D0060CB70 /* GenericDynamicStack.c */; };
+		7D4120522268C77F0060CB70 /* DynamicStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D41202D2268C77D0060CB70 /* DynamicStack.c */; };
+		7D4120532268C77F0060CB70 /* Teste.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D41202E2268C77D0060CB70 /* Teste.c */; };
+		7D4120542268C77F0060CB70 /* PonteiroDuplo.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120302268C77D0060CB70 /* PonteiroDuplo.c */; };
+		7D4120552268C77F0060CB70 /* validaarquivo.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120312268C77D0060CB70 /* validaarquivo.c */; };
+		7D4120562268C77F0060CB70 /* DoublyLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120322268C77D0060CB70 /* DoublyLinkedList.c */; };
+		7D4120572268C77F0060CB70 /* ListaSimplesmenteLigada.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120332268C77D0060CB70 /* ListaSimplesmenteLigada.c */; };
+		7D4120582268C77F0060CB70 /* Hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120352268C77D0060CB70 /* Hash.c */; };
+		7D4120592268C77F0060CB70 /* filaatendimento.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120362268C77D0060CB70 /* filaatendimento.c */; };
+		7D41205A2268C77F0060CB70 /* colorindo.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120392268C77D0060CB70 /* colorindo.c */; };
+		7D41205B2268C77F0060CB70 /* PonteiroExemplos.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D41203B2268C77E0060CB70 /* PonteiroExemplos.c */; };
+		7D41205C2268C77F0060CB70 /* palindroma.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D41203C2268C77E0060CB70 /* palindroma.c */; };
+		7D41205D2268C77F0060CB70 /* avaliacaoNPR.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D41203F2268C77E0060CB70 /* avaliacaoNPR.c */; };
+		7D41205E2268C77F0060CB70 /* prioridadeexpressao.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120412268C77E0060CB70 /* prioridadeexpressao.c */; };
+		7D41205F2268C77F0060CB70 /* torrehanoi.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120422268C77E0060CB70 /* torrehanoi.c */; };
+		7D4120602268C77F0060CB70 /* filaatendimentov2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120432268C77E0060CB70 /* filaatendimentov2.c */; };
+		7D4120612268C77F0060CB70 /* process_scheduler.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120442268C77E0060CB70 /* process_scheduler.c */; };
+		7D4120622268C77F0060CB70 /* compilador.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120452268C77E0060CB70 /* compilador.c */; };
+		7D4120632268C77F0060CB70 /* infixaposfixa.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120472268C77F0060CB70 /* infixaposfixa.c */; };
+		7D4120642268C77F0060CB70 /* conversaobase10para2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120482268C77F0060CB70 /* conversaobase10para2.c */; };
+		7D4120652268C77F0060CB70 /* escalonadorIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4120492268C77F0060CB70 /* escalonadorIO.c */; };
+		7D4120662268C77F0060CB70 /* DynamicQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D41204B2268C77F0060CB70 /* DynamicQueue.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +48,52 @@
 /* Begin PBXFileReference section */
 		7D0C473E1E882D3F00307C49 /* datastructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = datastructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0C47411E882D3F00307C49 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7D4120222268C77C0060CB70 /* npr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = npr.h; sourceTree = "<group>"; };
+		7D4120232268C77C0060CB70 /* program.edd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = program.edd; sourceTree = "<group>"; };
+		7D4120242268C77C0060CB70 /* iStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iStack.h; sourceTree = "<group>"; };
+		7D4120252268C77C0060CB70 /* dStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dStack.h; sourceTree = "<group>"; };
+		7D4120262268C77D0060CB70 /* iDoubleStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iDoubleStack.h; sourceTree = "<group>"; };
+		7D4120272268C77D0060CB70 /* LinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
+		7D4120282268C77D0060CB70 /* sdStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdStack.h; sourceTree = "<group>"; };
+		7D4120292268C77D0060CB70 /* cStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cStack.h; sourceTree = "<group>"; };
+		7D41202A2268C77D0060CB70 /* GenericDynamicStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GenericDynamicStack.c; sourceTree = "<group>"; };
+		7D41202B2268C77D0060CB70 /* iQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iQueue.h; sourceTree = "<group>"; };
+		7D41202C2268C77D0060CB70 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		7D41202D2268C77D0060CB70 /* DynamicStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DynamicStack.c; sourceTree = "<group>"; };
+		7D41202E2268C77D0060CB70 /* Teste.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Teste.c; sourceTree = "<group>"; };
+		7D41202F2268C77D0060CB70 /* xyQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xyQueue.h; sourceTree = "<group>"; };
+		7D4120302268C77D0060CB70 /* PonteiroDuplo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PonteiroDuplo.c; sourceTree = "<group>"; };
+		7D4120312268C77D0060CB70 /* validaarquivo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = validaarquivo.c; sourceTree = "<group>"; };
+		7D4120322268C77D0060CB70 /* DoublyLinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DoublyLinkedList.c; sourceTree = "<group>"; };
+		7D4120332268C77D0060CB70 /* ListaSimplesmenteLigada.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ListaSimplesmenteLigada.c; sourceTree = "<group>"; };
+		7D4120342268C77D0060CB70 /* processQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processQueue.h; sourceTree = "<group>"; };
+		7D4120352268C77D0060CB70 /* Hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Hash.c; sourceTree = "<group>"; };
+		7D4120362268C77D0060CB70 /* filaatendimento.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filaatendimento.c; sourceTree = "<group>"; };
+		7D4120372268C77D0060CB70 /* DoublyLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoublyLinkedList.h; sourceTree = "<group>"; };
+		7D4120382268C77D0060CB70 /* sStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sStack.h; sourceTree = "<group>"; };
+		7D4120392268C77D0060CB70 /* colorindo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colorindo.c; sourceTree = "<group>"; };
+		7D41203A2268C77E0060CB70 /* clientQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clientQueue.h; sourceTree = "<group>"; };
+		7D41203B2268C77E0060CB70 /* PonteiroExemplos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PonteiroExemplos.c; sourceTree = "<group>"; };
+		7D41203C2268C77E0060CB70 /* palindroma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = palindroma.c; sourceTree = "<group>"; };
+		7D41203D2268C77E0060CB70 /* ListaDePalavrasEN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListaDePalavrasEN.txt; sourceTree = "<group>"; };
+		7D41203E2268C77E0060CB70 /* Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hash.h; sourceTree = "<group>"; };
+		7D41203F2268C77E0060CB70 /* avaliacaoNPR.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = avaliacaoNPR.c; sourceTree = "<group>"; };
+		7D4120402268C77E0060CB70 /* GenericDynamicStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDynamicStack.h; sourceTree = "<group>"; };
+		7D4120412268C77E0060CB70 /* prioridadeexpressao.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prioridadeexpressao.c; sourceTree = "<group>"; };
+		7D4120422268C77E0060CB70 /* torrehanoi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = torrehanoi.c; sourceTree = "<group>"; };
+		7D4120432268C77E0060CB70 /* filaatendimentov2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filaatendimentov2.c; sourceTree = "<group>"; };
+		7D4120442268C77E0060CB70 /* process_scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = process_scheduler.c; sourceTree = "<group>"; };
+		7D4120452268C77E0060CB70 /* compilador.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compilador.c; sourceTree = "<group>"; };
+		7D4120462268C77F0060CB70 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		7D4120472268C77F0060CB70 /* infixaposfixa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infixaposfixa.c; sourceTree = "<group>"; };
+		7D4120482268C77F0060CB70 /* conversaobase10para2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = conversaobase10para2.c; sourceTree = "<group>"; };
+		7D4120492268C77F0060CB70 /* escalonadorIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = escalonadorIO.c; sourceTree = "<group>"; };
+		7D41204A2268C77F0060CB70 /* DynamicStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicStack.h; sourceTree = "<group>"; };
+		7D41204B2268C77F0060CB70 /* DynamicQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DynamicQueue.c; sourceTree = "<group>"; };
+		7D41204C2268C77F0060CB70 /* DynamicQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicQueue.h; sourceTree = "<group>"; };
+		7D41204D2268C77F0060CB70 /* ListaDePalavrasPT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListaDePalavrasPT.txt; sourceTree = "<group>"; };
+		7D41204E2268C77F0060CB70 /* ListaGeneralizada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaGeneralizada.h; sourceTree = "<group>"; };
+		7D41204F2268C77F0060CB70 /* ListaSimplesmenteLigada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaSimplesmenteLigada.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +126,52 @@
 		7D0C47401E882D3F00307C49 /* datastructure */ = {
 			isa = PBXGroup;
 			children = (
+				7D41203F2268C77E0060CB70 /* avaliacaoNPR.c */,
+				7D41203A2268C77E0060CB70 /* clientQueue.h */,
+				7D4120392268C77D0060CB70 /* colorindo.c */,
+				7D4120452268C77E0060CB70 /* compilador.c */,
+				7D4120482268C77F0060CB70 /* conversaobase10para2.c */,
+				7D4120292268C77D0060CB70 /* cStack.h */,
+				7D4120322268C77D0060CB70 /* DoublyLinkedList.c */,
+				7D4120372268C77D0060CB70 /* DoublyLinkedList.h */,
+				7D4120252268C77C0060CB70 /* dStack.h */,
+				7D41204B2268C77F0060CB70 /* DynamicQueue.c */,
+				7D41204C2268C77F0060CB70 /* DynamicQueue.h */,
+				7D41202D2268C77D0060CB70 /* DynamicStack.c */,
+				7D41204A2268C77F0060CB70 /* DynamicStack.h */,
+				7D4120492268C77F0060CB70 /* escalonadorIO.c */,
+				7D4120362268C77D0060CB70 /* filaatendimento.c */,
+				7D4120432268C77E0060CB70 /* filaatendimentov2.c */,
+				7D41202A2268C77D0060CB70 /* GenericDynamicStack.c */,
+				7D4120402268C77E0060CB70 /* GenericDynamicStack.h */,
+				7D4120352268C77D0060CB70 /* Hash.c */,
+				7D41203E2268C77E0060CB70 /* Hash.h */,
+				7D4120262268C77D0060CB70 /* iDoubleStack.h */,
+				7D4120472268C77F0060CB70 /* infixaposfixa.c */,
+				7D41202B2268C77D0060CB70 /* iQueue.h */,
+				7D4120242268C77C0060CB70 /* iStack.h */,
+				7D4120272268C77D0060CB70 /* LinkedList.c */,
+				7D41202C2268C77D0060CB70 /* LinkedList.h */,
+				7D4120462268C77F0060CB70 /* List.h */,
+				7D41203D2268C77E0060CB70 /* ListaDePalavrasEN.txt */,
+				7D41204D2268C77F0060CB70 /* ListaDePalavrasPT.txt */,
+				7D41204E2268C77F0060CB70 /* ListaGeneralizada.h */,
+				7D4120332268C77D0060CB70 /* ListaSimplesmenteLigada.c */,
+				7D41204F2268C77F0060CB70 /* ListaSimplesmenteLigada.h */,
+				7D4120222268C77C0060CB70 /* npr.h */,
+				7D41203C2268C77E0060CB70 /* palindroma.c */,
+				7D4120302268C77D0060CB70 /* PonteiroDuplo.c */,
+				7D41203B2268C77E0060CB70 /* PonteiroExemplos.c */,
+				7D4120412268C77E0060CB70 /* prioridadeexpressao.c */,
+				7D4120442268C77E0060CB70 /* process_scheduler.c */,
+				7D4120342268C77D0060CB70 /* processQueue.h */,
+				7D4120232268C77C0060CB70 /* program.edd */,
+				7D4120282268C77D0060CB70 /* sdStack.h */,
+				7D4120382268C77D0060CB70 /* sStack.h */,
+				7D41202E2268C77D0060CB70 /* Teste.c */,
+				7D4120422268C77E0060CB70 /* torrehanoi.c */,
+				7D4120312268C77D0060CB70 /* validaarquivo.c */,
+				7D41202F2268C77D0060CB70 /* xyQueue.h */,
 				7D0C47411E882D3F00307C49 /* main.c */,
 			);
 			path = datastructure;
@@ -120,7 +235,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4120502268C77F0060CB70 /* LinkedList.c in Sources */,
+				7D4120572268C77F0060CB70 /* ListaSimplesmenteLigada.c in Sources */,
+				7D41205C2268C77F0060CB70 /* palindroma.c in Sources */,
+				7D41205E2268C77F0060CB70 /* prioridadeexpressao.c in Sources */,
+				7D4120512268C77F0060CB70 /* GenericDynamicStack.c in Sources */,
+				7D4120592268C77F0060CB70 /* filaatendimento.c in Sources */,
+				7D4120552268C77F0060CB70 /* validaarquivo.c in Sources */,
+				7D4120632268C77F0060CB70 /* infixaposfixa.c in Sources */,
+				7D4120612268C77F0060CB70 /* process_scheduler.c in Sources */,
+				7D4120662268C77F0060CB70 /* DynamicQueue.c in Sources */,
+				7D4120542268C77F0060CB70 /* PonteiroDuplo.c in Sources */,
+				7D4120602268C77F0060CB70 /* filaatendimentov2.c in Sources */,
+				7D4120582268C77F0060CB70 /* Hash.c in Sources */,
+				7D4120522268C77F0060CB70 /* DynamicStack.c in Sources */,
+				7D41205D2268C77F0060CB70 /* avaliacaoNPR.c in Sources */,
+				7D4120562268C77F0060CB70 /* DoublyLinkedList.c in Sources */,
+				7D41205A2268C77F0060CB70 /* colorindo.c in Sources */,
+				7D4120652268C77F0060CB70 /* escalonadorIO.c in Sources */,
 				7D0C47421E882D3F00307C49 /* main.c in Sources */,
+				7D4120532268C77F0060CB70 /* Teste.c in Sources */,
+				7D41205F2268C77F0060CB70 /* torrehanoi.c in Sources */,
+				7D41205B2268C77F0060CB70 /* PonteiroExemplos.c in Sources */,
+				7D4120622268C77F0060CB70 /* compilador.c in Sources */,
+				7D4120642268C77F0060CB70 /* conversaobase10para2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +387,7 @@
 				7D0C47471E882D3F00307C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
