@@ -92,7 +92,6 @@
 		7D41204B2268C77F0060CB70 /* DynamicQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DynamicQueue.c; sourceTree = "<group>"; };
 		7D41204C2268C77F0060CB70 /* DynamicQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicQueue.h; sourceTree = "<group>"; };
 		7D41204D2268C77F0060CB70 /* ListaDePalavrasPT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListaDePalavrasPT.txt; sourceTree = "<group>"; };
-		7D41204E2268C77F0060CB70 /* ListaGeneralizada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaGeneralizada.h; sourceTree = "<group>"; };
 		7D41204F2268C77F0060CB70 /* ListaSimplesmenteLigada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaSimplesmenteLigada.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,7 +154,6 @@
 				7D4120462268C77F0060CB70 /* List.h */,
 				7D41203D2268C77E0060CB70 /* ListaDePalavrasEN.txt */,
 				7D41204D2268C77F0060CB70 /* ListaDePalavrasPT.txt */,
-				7D41204E2268C77F0060CB70 /* ListaGeneralizada.h */,
 				7D4120332268C77D0060CB70 /* ListaSimplesmenteLigada.c */,
 				7D41204F2268C77F0060CB70 /* ListaSimplesmenteLigada.h */,
 				7D4120222268C77C0060CB70 /* npr.h */,
