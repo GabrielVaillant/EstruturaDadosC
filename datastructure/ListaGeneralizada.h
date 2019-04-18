@@ -11,22 +11,20 @@
 
 #include <stdio.h>
 
-typedef struct No {
-    int tipo; //0 atomo e 1 lista
+typedef struct Node {
+    int type; //0 atomo e 1 lista
     union {
-        int atomo;
-        struct No *lista;
+        int atom;
+        struct Node *list;
     }atomList;
-    struct No *prox;
-}No;
+    struct Node *tail;
+}Node;
 
-int inserirAtomo(No **lista, int dado);
-int inserirLista(No **lista, No **subLista);
-No* cabeca(No *lista);
-No* cauda(No *lista);
-void print(No *lista);
-int profundidade(No *lista);
-#endif /* ListaGeneralizada_h */
-
+int addAtom(Node **list, int data);
+int addList(Node **list, Node **subList);
+Node* head(Node *list);
+Node* tail(Node *list);
+void showGeneralizedList(Node *list);
+int height(Node *list);
 
 #endif /* ListaGeneralizada_h */
