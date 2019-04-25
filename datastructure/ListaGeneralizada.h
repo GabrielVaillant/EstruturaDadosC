@@ -9,6 +9,7 @@
 #ifndef ListaGeneralizada_h
 #define ListaGeneralizada_h
 
+#include <stdlib.h>
 #include <stdio.h>
 
 typedef struct Node {
@@ -25,6 +26,6 @@ int addList(Node **list, Node **subList);
 Node* head(Node *list);
 Node* tail(Node *list);
 void showGeneralizedList(Node *list);
-int height(Node *list);
+int depth(Node *list);
 
 #endif /* ListaGeneralizada_h */
