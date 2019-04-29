@@ -5,7 +5,7 @@
 //  Created by João Paulo Delgado Preti on 18/04/19.
 //  Copyright © 2019 João Paulo Delgado Preti. All rights reserved.
 //
-
+/*
 #ifndef ListaGeneralizada_h
 #define ListaGeneralizada_h
 
@@ -29,3 +29,4 @@ void showGeneralizedList(Node *list);
 int depth(Node *list);
 
 #endif /* ListaGeneralizada_h */
+
