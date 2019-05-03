@@ -27,17 +27,17 @@ typedef int (*TreeComparator)(void *element1, void *element2);
  * Adiciona um novo elemento na árvore
  *
  * Argumentos:
- * - root:    A raiz da árvore/subárvore
+ * - root:    O endereço do ponteiro da raiz da árvore/subárvore
  * - element: o elemento a ser adicionado
  * - f: a função para comparação dos elementos
- * - newroot: um parâmetro que guarda o endereço de memório do ponteiro da raiz da árvore/subárvore.
+ 
  *
  * Retorna:
  * - 1 em caso de sucesso
  * - 0 caso não tenha mais memória
  * - -1 caso o elemento já exista na árvore
  */
-int add(TreeNode *root, void *element, TreeComparator f, TreeNode **newroot);
+int add(TreeNode **root, void *element, TreeComparator f);
 
 /*
  * Localiza um elemento na árvore
