@@ -24,6 +24,11 @@ typedef struct TreeNode {
 typedef int (*TreeComparator)(void *element1, void *element2);
 
 /*
+ * O usuário da bilbioteca deve fornecer uma função para impressão dos dados do TreeNode
+ */
+typedef void (*printNode)(void*);
+
+/*
  * Adiciona um novo elemento na árvore
  *
  * Argumentos:
@@ -53,5 +58,20 @@ int add(TreeNode **root, void *element, TreeComparator f);
  * - 0 caso não encontre
  */
 int find(TreeNode *root, void *key, TreeComparator f, void **element);
+
+/*
+ * Imprime os elementos ERD
+ */
+void in_order(TreeNode *root, printNode print);
+
+/*
+ * Imprime os elementos RED
+ */
+void pre_order(TreeNode *root, printNode print);
+
+/*
+ * Imprime os elementos EDR
+ */
+void post_order(TreeNode *root, printNode print);
 
 #endif /* BinarySearchTree_h */
