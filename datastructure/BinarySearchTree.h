@@ -88,4 +88,16 @@ void post_order(TreeNode *root, printNode print);
  */
 int removeTreeNode(TreeNode **root, void *key, TreeComparator f);
 
+/*
+ * Calcula a altura da árvore/subárvore
+ *
+ * Argumentos:
+ * - root: A raiz da árvore/subárvore
+ *
+ * Retorna:
+ * - inteiro que representa a altura da árvore
+ * - árvore com apenas um nó tem altura 0
+ */
+int height (TreeNode *root);
+
 #endif /* BinarySearchTree_h */
