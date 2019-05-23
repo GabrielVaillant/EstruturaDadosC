@@ -105,10 +105,6 @@ int height (TreeNode *root);
  *
  * Argumentos:
  * - root: A raiz da árvore/subárvore
- *
- * Retorna:
- * - inteiro que representa a altura da árvore
- * - árvore com apenas um nó tem altura 0
  */
 void destroy (TreeNode **root);
 
