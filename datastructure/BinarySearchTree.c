@@ -145,3 +145,22 @@ int removeTreeNode(TreeNode **root, void *key, TreeComparator f) {
     }
     return 1;
 }
+
+int height (TreeNode *root) {
+    if (root == NULL)
+        return -1; // altura da árvore vazia
+    else {
+        int hl = height(root->left); //altura esquerda
+        int hr = height(root->right); //altura direita
+        if (hl < hr) return hr + 1;
+        else return hl + 1;
+    }
+}
+
+void destroy (TreeNode **root) {
+    if (*root==NULL) return;
+    destroy(&(*root)->left);
+    destroy(&(*root)->right);
+    free(*root);
+    *root=NULL;
+}

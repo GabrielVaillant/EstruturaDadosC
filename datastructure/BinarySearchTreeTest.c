@@ -65,6 +65,16 @@ int main(int argc, char **argv) {
     snprintf(el->value, 10, "Val 53");
     assert(add(&tree, el, &BinarySearchTreeElementComparator) == 1);
     assert(add(&tree, el, &BinarySearchTreeElementComparator) == -1);
+    
+    el = (BinarySearchTreeElement *) malloc(sizeof(BinarySearchTreeElement));
+    assert(el != NULL);
+    el->key = 55;
+    snprintf(el->value, 10, "Val 55");
+    assert(add(&tree, el, &BinarySearchTreeElementComparator) == 1);
+    assert(add(&tree, el, &BinarySearchTreeElementComparator) == -1);
+    
+    //assert(height(tree) == 3);
+
     /*
      el = (BinarySearchTreeElement *) malloc(sizeof(BinarySearchTreeElement));
      assert(el != NULL);
@@ -99,7 +109,7 @@ int main(int argc, char **argv) {
     findEl.key = 10;
     assert(find(tree, &findEl, &BinarySearchTreeElementComparator,
                 (void **) &el) == 0);
-    
+
     //tree=rem(tree,45);
     el = (BinarySearchTreeElement *) malloc(sizeof(BinarySearchTreeElement));
     el->key=45;
@@ -110,8 +120,14 @@ int main(int argc, char **argv) {
     pre_order(tree, printInteger);
     printf("\n");
     post_order(tree, printInteger);
+    printf("\n");
+    printf("Altura: %d ", height(tree));
+    printf("\n");
+    destroy(&tree);
     
-    
+    in_order(tree, printInteger);
+    assert(tree == NULL);
+    printf("\n");
     return 0;
 }
 
